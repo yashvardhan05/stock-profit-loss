@@ -1,11 +1,11 @@
-// Step 1 - selecting all the elements
+
 var initialPrice = document.querySelector("#initial-price");
 var stocksQuantity = document.querySelector("#stocks-quantity");
 var currentPrice = document.querySelector("#current-price");
 var submitBtn = document.querySelector("#submit-btn");
 var outputBox = document.querySelector("#output-box");
 
-// Ex-06
+
 submitBtn.addEventListener("click", submitHandler);
 
 function submitHandler() {
@@ -16,7 +16,7 @@ function submitHandler() {
   calculateProfitAndLoss(ip, qty, curr);
 }
 
-// Ex-05
+
 function calculateProfitAndLoss(initial, quantity, current) {
   if (initial > current) {
     var loss = (initial - current) * quantity;
